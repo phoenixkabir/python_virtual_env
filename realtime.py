@@ -38,7 +38,9 @@ get_answer_box_declaration = {
 }
 
 # prompt = "It's freezing!, what is the temperature in London today? do you know it?"
-prompt = "Morning! how is Tesla stock doing today? I just bought some shares yesterday."
+# prompt = "Morning! how is Tesla stock doing today? I just bought some shares yesterday."
+prompt = input("Enter a prompt: ")
+
 
 model = genai.GenerativeModel('gemini-1.5-flash')
 response = model.generate_content(
